@@ -8,7 +8,7 @@ import { IUser } from 'src/app/modals/user';
 export class UserService {
 	userSubject?: BehaviorSubject<IUser>;
 	user$: Observable<IUser>;
-
+	loggedIn: boolean = false;
 	constructor() {
 		this.userSubject = new BehaviorSubject<IUser>({
 			name: '',
@@ -22,6 +22,7 @@ export class UserService {
 			name: 'Alina',
 			role: 'Admin',
 		});
+		this.loggedIn = true;
 	}
 
 	logout() {
@@ -29,9 +30,14 @@ export class UserService {
 			name: '',
 			role: '',
 		});
+		this.loggedIn = false;
 	}
 
 	getUser(): Observable<IUser> {
 		return this.user$;
+	}
+
+	isAuthenticated(): boolean {
+		return this.loggedIn;
 	}
 }

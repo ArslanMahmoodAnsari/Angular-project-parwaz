@@ -29,3 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## for integrating bootstrap@4 in the angular
 
 https://codeplaners.com/how-to-install-bootstrap-5-in-angular-12/
+
+## Bootstrap SideBar
+
+https://bootsnipp.com/snippets/Q0dAX
+
+## fontAwesome
+
+https://www.npmjs.com/package/@fortawesome/angular-fontawesome

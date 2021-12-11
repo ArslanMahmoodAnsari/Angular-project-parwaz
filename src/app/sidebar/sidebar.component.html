@@ -26,7 +26,7 @@
 						<span>{{ item.title }}</span>
 					</li>
 					<li *ngIf="!item.isHeader" class="sidebar-dropdown">
-						<a href="#">
+						<a [routerLink]="[item?.route]">
 							<fa-icon class="faIcons" [icon]="item.icon"></fa-icon>
 							<span>{{ item.title }}</span>
 						</a>
@@ -39,7 +39,9 @@
 	</nav>
 	<!-- sidebar-wrapper  -->
 	<main class="page-content">
-		<div class="container-fluid"></div>
+		<div class="container-fluid">
+			<router-outlet></router-outlet>
+		</div>
 	</main>
 	<!-- page-content" -->
 </div>

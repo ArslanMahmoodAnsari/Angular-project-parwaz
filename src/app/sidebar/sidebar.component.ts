@@ -21,36 +21,43 @@ export class SidebarComponent implements OnInit {
 			icon: faTachometerAlt,
 			title: 'APP',
 			isHeader: true,
+			route: '',
 		},
 		{
 			icon: faTachometerAlt,
 			title: 'Dashboard',
 			isHeader: false,
+			route: 'dashboard',
 		},
 		{
 			icon: faUser,
 			title: 'User',
 			isHeader: false,
+			route: 'users',
 		},
 		{
 			icon: faStickyNote,
 			title: 'post',
 			isHeader: false,
+			route: 'posts',
 		},
 		{
 			icon: faTachometerAlt,
 			title: 'Account',
 			isHeader: true,
+			route: '',
 		},
 		{
 			icon: faUser,
 			title: 'My Account',
 			isHeader: false,
+			route: 'account',
 		},
 		{
 			icon: faSignOutAlt,
 			title: 'Logout',
 			isHeader: false,
+			route: '',
 		},
 	];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {
 	faUserCircle,
 	faTachometerAlt,
@@ -7,6 +7,7 @@ import {
 	faStickyNote,
 } from '@fortawesome/free-solid-svg-icons';
 import { ISideBar } from '../modals/sidebar';
+import { IUser } from '../modals/user';
 
 @Component({
 	selector: 'app-sidebar',
@@ -52,6 +53,9 @@ export class SidebarComponent implements OnInit {
 			isHeader: false,
 		},
 	];
+
+	@Input()
+	user?: IUser;
 
 	constructor() {}
 

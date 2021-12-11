@@ -1,2 +1,2 @@
-<app-header></app-header>
-<app-sidebar></app-sidebar>
+<app-header [user]="user"></app-header>
+<app-sidebar *ngIf="user?.name !== ''" [user]="user"></app-sidebar>

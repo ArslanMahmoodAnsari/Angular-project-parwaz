@@ -1,11 +1,11 @@
 <ul class="nav justify-content-end header">
 	<li class="nav-item">
-		<a class="nav-link" href="#">User</a>
+		<a class="nav-link" href="#" *ngIf="user?.name">{{ user?.name }}</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#">Sign In</a>
+		<a class="nav-link" href="#" *ngIf="!user?.name" (click)="signIn()">Sign In</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#">Sign Out</a>
+		<a class="nav-link" href="#" *ngIf="user?.name" (click)="signOut()">Sign Out</a>
 	</li>
 </ul>

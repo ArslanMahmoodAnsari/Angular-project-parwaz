@@ -14,10 +14,9 @@
 				<div class="user-pic text-white">
 					<fa-icon [icon]="faUserCircle" size="3x"></fa-icon>
 				</div>
-				<!-- TODO: needs to be Dynamic -->
 				<div class="user-info">
-					<span class="user-name">Jhon </span>
-					<span class="user-role">Administrator</span>
+					<span class="user-name">{{ user?.name }} </span>
+					<span class="user-role">{{ user?.role }}</span>
 				</div>
 			</div>
 			<!-- sidebar-search  -->

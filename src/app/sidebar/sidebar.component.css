@@ -240,10 +240,14 @@ body {
 	animation: swing ease-in-out 0.5s 1 alternate;
 }
 
+.faIcons {
+	background-color: #3a3f48;
+	border-radius: 20%;
+	padding: 5px;
+	margin-right: 10px;
+}
+
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	content: '\f105';
 	font-style: normal;
 	display: inline-block;
 	font-style: normal;
